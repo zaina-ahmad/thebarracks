@@ -1,4 +1,5 @@
 import React from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { AppProvider, useApp } from './context/AppContext';
 import { Header } from './components/Header';
 import { FirebaseModal } from './components/FirebaseModal';
@@ -52,6 +53,9 @@ const MainContent: React.FC = () => {
 
       {/* Firebase Uplink Configuration Modal */}
       <FirebaseModal />
+
+      {/* Vercel Speed Insights */}
+      <SpeedInsights />
     </div>
   );
 };
